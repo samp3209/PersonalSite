@@ -1,7 +1,142 @@
 <html>
-    <head>
-        <style>
-            
-        </style>
-    </head>
+<head>
+  <style>
+    body {
+      background: #c0c0c0 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKrVq36zwjjgzhhYWGMYAEYB8RmROaABADeOQ8CXl/xfgAAAABJRU5ErkJggg==");
+      font-family: "Comic Sans MS", "Times New Roman", serif;
+      max-width: 800px;
+      margin: 20px auto;
+      color: navy;
+    }
+
+    .menu {
+      background: #000080;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .menu a {
+      color: yellow;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      color: #ff00ff;
+      text-decoration: underline;
+    }
+
+    .project-container {
+      background: white;
+      border: 3px outset #999;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .project-card {
+      background: #ffffd4;
+      border: 2px inset #ccc;
+      margin: 20px 0;
+      padding: 15px;
+    }
+
+    .project-title {
+      color: #800080;
+      text-shadow: 1px 1px #000;
+      margin-top: 0;
+    }
+
+    .project-image {
+      max-width: 100%;
+      border: 2px solid #000;
+      margin: 10px 0;
+    }
+
+    .tech-stack {
+      background: #000080;
+      color: yellow;
+      padding: 5px 10px;
+      margin: 10px 0;
+    }
+
+    .project-links {
+      margin-top: 15px;
+    }
+
+    .project-links a {
+      background: #008080;
+      color: white;
+      padding: 5px 10px;
+      text-decoration: none;
+      margin-right: 10px;
+      border: 2px outset #006666;
+    }
+
+    .project-links a:hover {
+      background: #006666;
+    }
+
+    marquee {
+      background: #000;
+      color: lime;
+      padding: 5px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <a href="index.html">HOME</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="#skills">SKILLS</a>
+    <a href="ContactPage.html">CONTACT</a>
+  </div>
+
+  <div class="project-container">
+    <h1 class="project-title">🚀 My Projects 🚀</h1>
+
+    <div class="project-card">
+      <h2>Reinforcement Learning for Health Policies</h2>
+      <img src="images/Capture.JPG" alt="Project Screenshot" class="project-image" width="600" height="400">
+      <div class="tech-stack">
+        Technologies: Python, Mesa-Agent-Based Modeling
+      </div>
+      <p>Using Reinforcement Learning to Dynamically Update Health Policies during a Pandemic. This project simulates and optimizes health policy responses in real-time using learned weights from a Double DQN. Updates different health policies every 24 steps in the simulation based on current infection and production rates.</p>
+      <div class="project-links">
+        <a href="https://www.youtube.com/watch?v=9dVVW3hbctI">Live Demo</a>
+        <a href="https://github.khoury.northeastern.edu/samp3209/CS5100Final">Repo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h2>Image Manipulator Application</h2>
+      <img src="images/image.png" alt="Project Screenshot" class="project-image" width="600" height="400">
+      <div class="tech-stack">
+        Technologies: Java, GUI Development
+      </div>
+      <p>A versatile image manipulation tool supporting both GUI and command-line interfaces. Features include filters, transformations, and batch processing. Purpose of the project was to build a modular and expandable project adhering to good Java design principles. We based our design using builders and commands so that each new feature can be easily added and all new changes are encapsulated.</p>
+      <div class="project-links">
+        <a href="https://github.khoury.northeastern.edu/samp3209/CS5010/tree/main/Assignment4">Request to View Code</a>
+        <a href="https://github.khoury.northeastern.edu/samp3209/CS5010/blob/main/Assignment4/README.md#design-overview">Documentation</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h2>Digital Assets to Promotional Content</h2>
+      <img src="images/00713-20.png" alt="Project Screenshot" class="project-image" width="600" height="400">
+      <div class="tech-stack">
+        Technologies: BLIP, Stable Diffusion, Python
+      </div>
+      <p>Capstone project transforming digital assets into artificially generated promotional content using BLIP for labeling and fine-tuned Stable Diffusion models. Using BLIP I demonstrated that one could quickly mass label image assets and use that to train a Stable Diffusion model to produce artificially generated logos and promotional material.</p>
+      <div class="project-links">
+        <a href="https://github.com/samp3209/capstone">View Project</a>
+        <a href="https://samp3209.github.io/capstone/">Capstone Blog</a>
+      </div>
+    </div>
+  </div>
+
+  <marquee>💻 Check out my GitHub for more projects! 💻</marquee>
+</body>
 </html>
